@@ -1,24 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Movie from './movie-component/movie.js'
+import todd from './constants.js'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React Yay!
-        </a>
+  return (      
+      <header>
+        <h1>
+          buttcheeks
+        </h1>
+        <Movie movieName='todd' movieID='123456' imageLink={todd} description='tall asian man'/>
       </header>
-    </div>
   );
 }
 
